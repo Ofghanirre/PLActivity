@@ -1,0 +1,27 @@
+<ul nz-menu nzMode="horizontal">
+  <li nz-menu-item nzSelected (click)="this.selected = 0">
+    <span nz-icon nzType="book"></span>
+    Enoncé
+  </li>
+  <li nz-menu-item (click)="this.selected = 1">
+    <span nz-icon nzType="form"></span>
+    Activité
+  </li>
+</ul>
+<br />
+<span [ngSwitch]="this.selected">
+  <ng-container *ngSwitchCase="0">
+    <div class="statement fadeIn">
+      <h3 nz-typography>
+        <span nz-icon nzType="book" nzTheme="outline"></span> Énoncé
+      </h3>
+      <ep-statement [statement]="exercise.statement"></ep-statement>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="1">
+    <div class="formPlayer fadeIn">
+      <app-forms-provider [exercise]="exercise"></app-forms-provider>
+    </div>
+  </ng-container>
+  <ng-template *ngSwitchDefault></ng-template>
+</span>

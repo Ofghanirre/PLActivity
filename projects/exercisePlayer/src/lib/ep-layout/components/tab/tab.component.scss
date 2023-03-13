@@ -1,0 +1,24 @@
+
+.statement {
+    background-color: rgba(222, 222, 222, 0.301);
+    padding: 1vmax;
+}
+
+.formPlayer {
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0%;
+        transform: translateY(5%);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation: 1s ease-out 0s 1 fadeInAnimation;
+}

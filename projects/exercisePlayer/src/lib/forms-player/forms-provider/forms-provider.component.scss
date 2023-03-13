@@ -1,0 +1,11 @@
+.disabled {
+    pointer-events: none;
+}
+
+.enabled {
+    pointer-events: all;
+}
+
+.mainContainer {
+    padding: 0 3vmax 0 3vmax;
+}

@@ -1,0 +1,19 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+
+    .statement {
+        background-color: rgba(222, 222, 222, 0.301);
+        padding: 1vmax;
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+
+    .formPlayer {
+        grid-area: 1 / 2 / 2 / 3; 
+    }
+}
