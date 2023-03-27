@@ -1,0 +1,37 @@
+{
+  "id" : "ffff-ffff-ffff-ffff-fff2",
+  "title": "InputBox Exercise",
+  "author": "Antonin Jean",
+  "version": "0.0.42 Alpha",
+  "statement": "### Let's do some Maths!\n",
+  "formArray" : [
+      {
+        "selector": "inputBox",
+        "form": {
+          "disabled" : false,
+          "statement": "### Let's say I have the following equation to know how much I need to pay for my mithril armor:\n>`15 + 29 - ( 6 * 9 - 52)`\n\n how much should I pay for it ?",
+          "type": "number",
+          "hint": "The result is ultimate",
+          "placeholder": "write something",
+          "numberProperties": {
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unitSuffix": "$"
+          }
+        }
+      }
+    ],
+  "displayData": {
+    "templateSelector": "default"
+  },
+  "tags" : [
+    "L1",
+    "Informatique",
+    "WIP",
+    "Platon",
+    "Example",
+    "Boolean"
+  ]
+}
+

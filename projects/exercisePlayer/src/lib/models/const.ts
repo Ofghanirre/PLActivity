@@ -43,7 +43,7 @@ export const CExercise : Exercise = {
                     },
                     {
                         content: "Choix 4",
-                    },    
+                    },
                 ]
             }
         },
@@ -65,7 +65,7 @@ export const CExercise : Exercise = {
                     },
                     {
                         content: "Choix 4",
-                    },               
+                    },
                 ]
             }
         },

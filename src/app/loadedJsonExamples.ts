@@ -1,7 +1,9 @@
-import simpleExercice from '../assets/examples/simpleExercise.json';
-import simpleExercice1 from '../assets/examples/simpleExercise1.json';
-import simpleExerciceCorrection from '../assets/examples/simpleExerciseCorrection.json';
+import simpleExercise from '../assets/examples/simpleExercise.json';
+import simpleExercise1 from '../assets/examples/simpleExercise1.json';
+import simpleExerciseCorrection from '../assets/examples/simpleExerciseCorrection.json';
+import inputBox from '../assets/examples/inputBox.json';
+
 
 export const loadedJsonExamples = [
-  simpleExercice, simpleExercice1, simpleExerciceCorrection
+  simpleExercise, simpleExercise1, simpleExerciseCorrection, inputBox
 ]
