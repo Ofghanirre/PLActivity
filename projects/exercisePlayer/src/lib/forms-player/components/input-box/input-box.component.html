@@ -2,7 +2,7 @@
   <ng-container *ngIf="this.inputBoxData.statement">
     <markdown>{{ this.inputBoxData.statement }}</markdown>
   </ng-container>
-  <span [ngSwitch]="this.inputBoxData?.type">
+  <span [ngSwitch]="this.inputBoxData.type">
     <!-- NUMBER CASE
     PROPERTIES:
       MAX,
@@ -77,7 +77,6 @@
           [nzAutocomplete]="auto"
           [placeholder]="this.inputBoxData.placeholder"
           [disabled]="this.inputBoxData.disabled"
-          nzBackfill
         />
       </ng-template>
 
@@ -146,7 +145,7 @@
     <div *ngSwitchDefault></div>
   </span>
 
-  <!-- Hint displaying 
+  <!-- Hint displaying
     Author : Note de l'auteur
     Hint: Markdown
   -->

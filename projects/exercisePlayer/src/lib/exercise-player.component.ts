@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {CExercise, getTagColor} from './models/const';
+import {ExercisePlayerService} from "./exercise-player.service";
 
 @Component({
   selector: 'lib-exercisePlayer',
@@ -20,7 +21,9 @@ export class ExercisePlayerComponent implements OnInit {
     return getTagColor(str);
   }
 
-  constructor() { }
+  constructor(private service: ExercisePlayerService) {
+    service.getExercise("0");
+  }
 
   ngOnInit(): void {
   }

@@ -9,7 +9,7 @@ import { OldExercise } from './models/exercise';
 export class ExercisePlayerService {
 
   constructor(private httpClient: HttpClient) { }
-  
+
   token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4NzE3MTA4LCJqdGkiOiI3NWMyNjM2NDYzYzE0MTE5YTZmODY0NzE3OGRmMzBmMSIsInVzZXJfaWQiOjJ9.1hFDgHhyua7OW8urzDc-37yxX8QUxkSgk-sOVXfrMvc";
 
   getExercise(id : string) : Observable<OldExercise> {
@@ -19,6 +19,7 @@ export class ExercisePlayerService {
       }
     });
   }
+
 
 
   submit(id : string, data : any) : Observable<any> {
