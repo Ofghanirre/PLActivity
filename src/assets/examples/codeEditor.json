@@ -1,0 +1,32 @@
+{
+  "id" : "ffff-ffff-ffff-ffff-fff3",
+  "title": "CodeEditor Exercise",
+  "author": "Antonin Jean",
+  "version": "0.0.42 Alpha",
+  "statement": "### Let's do some Code!\n",
+  "formArray" : [
+      {
+        "selector": "codeEditor",
+        "form": {
+          "disabled" : false,
+          "statement": "### I'm such a messy man that I tend to always forgot where I put my numbers on my list, can you write a `find(list, elem)` function for me that return the index of the element in the list, or -1 if it is not present",
+          "initialCode": "#Write your code here\nfind(list: List, elem: int) -> int:\n\t# Code here\n\treturn 42",
+          "tabSize": 4,
+          "language": "python",
+          "quickSuggestions": true
+        }
+      }
+    ],
+  "displayData": {
+    "templateSelector": "default"
+  },
+  "tags" : [
+    "L1",
+    "Informatique",
+    "WIP",
+    "Platon",
+    "Example",
+    "Boolean"
+  ]
+}
+
