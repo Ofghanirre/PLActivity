@@ -1,3 +1,4 @@
+<div class="wrapper">
 <nz-layout>
   <nz-header>
     ExercisePlayer Showcase by Antonin JEAN
@@ -11,9 +12,17 @@
           <label nz-radio *ngFor="let example of loadedExample | keyvalue" nzValue={{example.key}}>{{example.value.title}}</label>
       </nz-radio-group>
     </div>
-
     <div class="inner-content" *ngIf='selectedExampleId!==""'>
       <lib-exercisePlayer [exercise]="selectedExample"></lib-exercisePlayer>
+    </div>
+
+    <div class="inner-content" *ngIf='selectedExampleId!==""'>
+      <h3>Json Value for file <code>{{this.selectedExample.title}}.json</code></h3>
+      <div class="json-displayer">
+      <code>
+        <pre>{{this.selectedExample | json}}</pre>
+      </code>
+      </div>
     </div>
   </nz-content>
   <nz-footer>
@@ -23,3 +32,4 @@
     </div>
   </nz-footer>
 </nz-layout>
+</div>

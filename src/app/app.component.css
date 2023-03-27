@@ -2,13 +2,19 @@
   text-align: center;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 nz-header {
   color: #fff;
   font-size: x-large;
   position: fixed;
   width: 100%;
   z-index: 5;
-
+  padding: 16px 16px 16px;
 }
 
 nz-footer {
@@ -24,7 +30,6 @@ nz-sider {
 nz-content {
   background: rgba(16, 142, 233, 1);
   color: #fff;
-  min-height: 120px;
   line-height: 120px;
   padding-top: 3vmax;
   display:flex;
@@ -34,7 +39,6 @@ nz-content {
 
 nz-layout {
   margin-bottom: 48px;
-  height: 100%;
 }
 
 .inner-content {
@@ -56,6 +60,7 @@ nz-layout:last-child {
   margin: 0;
 }
 
-.multiline {
-  white-space: pre-line;
+.json-displayer {
+  background-color: #efefef !important;
+  padding: 16px;
 }
