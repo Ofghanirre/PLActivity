@@ -10,7 +10,7 @@
       "form": {
         "disabled": false,
         "horizontal": false,
-        "statement": "#### Given the following expression:\n> `(A or B) and (not A or C) and (B or not C)`\n which composition(s) are leading to a `True` statement ? ",
+        "statement": "#### Given the following expression:\n> `(A or B) and (not A or C) and (B or not C)` \n\n which composition(s) are leading to a `True` statement ? ",
         "statementHorizontal": true,
         "items": [
           {

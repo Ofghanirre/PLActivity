@@ -1,6 +1,6 @@
 {
-  "id" : "ffff-ffff-ffff-ffff-fff1",
-  "title": "Simple Exercise 1",
+  "id" : "ffff-ffff-ffff-ffff-fff1-correction",
+  "title": "Simple Exercise Correction",
   "author": "Antonin Jean",
   "version": "0.0.42 Alpha",
   "statement": "### Let's do some Boolean logic!\n",
@@ -8,25 +8,30 @@
     {
       "selector": "radioGroup",
       "form": {
-        "disabled": false,
+        "disabled": true,
         "horizontal": true,
         "statement": "#### Given the following expression:\n> `(A or B) and (not A or C) and (B or not C)` \n\n which composition(s) are leading to a `True` statement ? ",
         "statementHorizontal": true,
         "items": [
           {
-            "content": "A : True, B : True, C : True"
+            "content": "A : True, B : True, C : True",
+            "css": "border-color: red"
           },
           {
-            "content": "B : True, C : False"
+            "content": "B : True, C : False",
+            "css": "border-color: red"
           },
           {
-            "content": "B : False, C : True"
+            "content": "B : False, C : True",
+            "css": "border-color: red"
           },
           {
-            "content": "A : True"
+            "content": "A : True",
+            "css": "border-color: red"
           },
           {
-            "content": "B : True, C : True"
+            "content": "B : True, C : True",
+            "css": "border-color: green"
           }
         ]
       }
