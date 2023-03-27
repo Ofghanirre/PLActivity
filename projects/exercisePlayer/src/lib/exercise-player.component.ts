@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {CExercise, getTagColor} from './models/const';
 import {ExercisePlayerService} from "./exercise-player.service";
 
@@ -11,8 +11,7 @@ import {ExercisePlayerService} from "./exercise-player.service";
 })
 export class ExercisePlayerComponent implements OnInit {
 
-
-  exercise = CExercise;
+  @Input() exercise = CExercise;
   context = "Activity/l1/platon"
 
 

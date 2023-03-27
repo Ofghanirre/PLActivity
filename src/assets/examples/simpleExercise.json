@@ -1,0 +1,46 @@
+{
+  "id" : "ffff-ffff-ffff-ffff-ffff",
+  "title": "Simple Exercise",
+  "author": "Antonin Jean",
+  "version": "0.0.42 Alpha",
+  "statement": "### Let's do some Boolean logic!\n",
+  "formArray" : [
+    {
+      "selector": "radioGroup",
+      "form": {
+        "disabled": false,
+        "horizontal": false,
+        "statement": "#### Given the following expression:\n> `(A or B) and (not A or C) and (B or not C)`\n which composition(s) are leading to a `True` statement ? ",
+        "statementHorizontal": true,
+        "items": [
+          {
+            "content": "A : True, B : True, C : True"
+          },
+          {
+            "content": "B : True, C : False"
+          },
+          {
+            "content": "B : False, C : True"
+          },
+          {
+            "content": "A : True"
+          },
+          {
+            "content": "B : True, C : True"
+          }
+        ]
+      }
+    }
+  ],
+  "displayData": {
+    "templateSelector": "default"
+  },
+  "tags" : [
+    "L1",
+    "Informatique",
+    "WIP",
+    "Platon",
+    "Example",
+    "Boolean"
+  ]
+}

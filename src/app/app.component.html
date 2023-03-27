@@ -1,1 +1,25 @@
-<lib-exercisePlayer></lib-exercisePlayer>
+<nz-layout>
+  <nz-header>
+    ExercisePlayer Showcase by Antonin JEAN
+  </nz-header>
+  <nz-content>
+    <div class="inner-content inner-content-header">
+      <p>
+        You can Select the Example to be used on the ExercisePlayer:
+      </p>
+      <nz-radio-group [(ngModel)]="selectedExampleId" (ngModelChange)="onSelectExample()" nzButtonStyle="solid">
+          <label nz-radio *ngFor="let example of loadedExample | keyvalue" nzValue={{example.key}}>{{example.value.title}}</label>
+      </nz-radio-group>
+    </div>
+
+    <div class="inner-content" *ngIf='selectedExampleId!==""'>
+      <lib-exercisePlayer [exercise]="selectedExample"></lib-exercisePlayer>
+    </div>
+  </nz-content>
+  <nz-footer>
+    <div class="multiline">
+      Exercise Player by Antonin JEAN.
+      Ant Design ©2020 Implement By Angular.
+    </div>
+  </nz-footer>
+</nz-layout>
